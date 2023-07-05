@@ -1,0 +1,28 @@
+{
+  "name": "js-storefront-be",
+  "version": "1.0.0",
+  "description": "[Udacity]  JS-Storefront-BE Project 2",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hoai97nam/JS-Storefront-BE.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hoai97nam/JS-Storefront-BE/issues"
+  },
+  "homepage": "https://github.com/hoai97nam/JS-Storefront-BE#readme",
+  "dependencies": {
+    "express": "^4.18.2",
+    "nodemon": "^2.0.22",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.1.6"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.17"
+  }
+}
