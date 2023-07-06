@@ -1,7 +1,7 @@
 {
-  "spec_dir": "spec",
-  "spec_file": ["../**/tests/*[s]pec.ts"],
-  "helper": ["helper/**/*.js"],
+  "spec_dir": "dist/models/tests",
+  "spec_files": ["**/*[sS]pec.js"],
+  "helpers": ["helpers/**/*.js"],
   "reporters": [
     {
       "name": "jasmine-spec-reporter#SpecReporter",

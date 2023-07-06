@@ -1,1 +1,1 @@
-CREATE TABLE mythical_weapons (name VARCHAR(100), type integer, id SERIAL PRIMARY KEY);
+CREATE TABLE mythical_weapons (name VARCHAR(100), type VARCHAR(100), id SERIAL PRIMARY KEY);
