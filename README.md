@@ -15,3 +15,14 @@ create user that matched to configuration in `.env` and `database.json`, example
 ```
 
 Run `db-migrate up` or `db-migrate down` 
+
+
+Create `.env` file with example:
+
+```
+POSTGRES_HOST=127.0.0.1
+POSTGRES_DB=fantasy_worlds
+POSTGRES_USER=postgres
+POSTGRES_PASSWORD=123
+ENV=dev
+```
