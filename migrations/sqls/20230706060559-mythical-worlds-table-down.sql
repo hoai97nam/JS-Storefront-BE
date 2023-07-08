@@ -1,1 +1,3 @@
-DROP TABLE mythical_weapons;
+DROP TABLE IF EXISTS mythical_weapons;
+DROP TABLE IF EXISTS users;
+DROP TABLE IF EXISTS books;
