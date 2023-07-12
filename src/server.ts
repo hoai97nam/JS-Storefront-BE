@@ -1,9 +1,10 @@
 import express, {Request, Response} from 'express';
 import bodyParser from 'body-parser';
 import cors from 'cors';
-import mythical_weapons_routes from './handlers/mythical_weapons';
 import userRoutes from './handlers/users';
-import articleRoutes from './handlers/books';
+import dashboardRoutes from './handlers/dashboard';
+import orderRoutes from './handlers/orders';
+import productRoutes from './handlers/products';
 
 
 const app: express.Application = express();
@@ -19,10 +20,13 @@ app.get('/', cors(corsOptions), (req: Request, res: Response) => {
   res.send('Hello, World!');
 });
 
-mythical_weapons_routes(app);
 userRoutes(app);
-articleRoutes(app);
+dashboardRoutes(app);
+orderRoutes(app);
+productRoutes(app);
 
 app.listen(port, () => {
   console.log(`Server is running on port ${address}`);
 });
+
+export default app;

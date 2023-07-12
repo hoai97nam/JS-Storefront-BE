@@ -1,3 +1,22 @@
-CREATE TABLE IF NOT EXISTS mythical_weapons (name VARCHAR(100), type VARCHAR(100), id SERIAL PRIMARY KEY);
-CREATE TABLE IF NOT EXISTS users (username VARCHAR(100), password_digest VARCHAR, id SERIAL PRIMARY KEY);
-CREATE TABLE IF NOT EXISTS books (title VARCHAR(100), author VARCHAR(100), totalPages integer, summary text, id SERIAL PRIMARY KEY);
+CREATE TABLE IF NOT EXISTS users (
+    id SERIAL PRIMARY KEY,
+    username VARCHAR(100),
+    password_digest VARCHAR
+);
+CREATE TABLE IF NOT EXISTS products (
+    id SERIAL PRIMARY KEY,
+    name VARCHAR(64) NOT NULL,
+    price integer NOT NULL
+);
+CREATE TABLE IF NOT EXISTS orders (
+    id SERIAL PRIMARY KEY,
+    status VARCHAR(64) NOT NULL,
+    user_id bigint REFERENCES users(id)
+);
+CREATE TABLE IF NOT EXISTS order_products (
+    id SERIAL PRIMARY KEY,
+    quantity integer,
+    order_id bigint REFERENCES orders(id),
+    product_id bigint REFERENCES products(id)
+);
+
